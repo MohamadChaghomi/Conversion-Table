@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conversion table</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="icon" href="../assets/exchange-svgrepo-com (1).svg" type="image/x-icon">
+
+</head>
+<body>
+    <div class="container">
+        <div class="conversion-select-part">
+            <label for="conversion-select" class="conversion-select-label">Choose a quantity:</label>
+            <select name="conversion" id="conversion-select" class="conversion-select">
+                <option value="Length">Length</option>
+                <option value="Weight">Weight</option>
+                <option value="Area">Area</option>
+                <option value="Temperature">Temperature</option>
+            </select>    
+        </div>
+        <div class="input-part">
+            <label for="numberInput" class="numberInput">Enter a number:</label>
+            <input type="number" id="numberInput" class="number-input" placeholder="Enter number here">
+        </div>
+        <div class="parameter-part">
+            <div id="button-length" class="conversion-button">
+                <div class="convertFrom">
+                    <label for="length-select" class="label">Convert from:</label>
+                    <select name="length-select" id="length-select" class="select">
+                        <option value="Meter">Meter</option>
+                        <option value="Centimeter">Centimeter</option>
+                        <option value="Millimeter">Millimeter</option>
+                    </select>        
+                </div>
+                <div class="convertInto">
+                    <label for="length-select" class="label">Convert into:</label>
+                    <select name="length-select" id="length-select-to" class="select">
+                        <option value="Meter">Meter</option>
+                        <option value="Centimeter">Centimeter</option>
+                        <option value="Millimeter">Millimeter</option>
+                    </select>        
+                </div>
+            </div>
+            <div id="button-weight" class="conversion-button" style="display: none;">
+                <div class="convertFrom">
+                    <label for="weight-select" class="label">Convert from:</label>
+                    <select name="weight-select" id="weight-select" class="select">
+                        <option value="Gram">Gram</option>
+                        <option value="Kilogram">Kilogram</option>
+                        <option value="Pound">Pound</option>
+                    </select>        
+                </div>
+                <div class="convertInto">
+                    <label for="weight-select" class="label">Convert into:</label>
+                    <select name="weight-select" id="weight-select-to" class="select">
+                        <option value="Gram">Gram</option>
+                        <option value="Kilogram">Kilogram</option>
+                        <option value="Pound">Pound</option>
+                    </select>        
+                </div>
+            </div>
+            <div id="button-area" class="conversion-button" style="display: none;">
+                <div class="convertFrom">
+                    <label for="area-select" class="label">Convert from:</label>
+                    <select name="area-select" id="area-select" class="select">
+                        <option value="Square-Meter">Square Meter</option>
+                        <option value="Square-Kilometer">Square Kilometer</option>
+                        <option value="Square-Foot">Kilo Foot</option>
+                    </select>        
+                </div>
+                <div class="convertInto">
+                    <label for="area-select" class="label">Convert into:</label>
+                    <select name="area-select" id="area-select-to" class="select">
+                        <option value="Square-Meter">Square Meter</option>
+                        <option value="Square-Kilometer">Square Kilometer</option>
+                        <option value="Square-Foot">Kilo Foot</option>
+                    </select>        
+                </div>
+            </div>
+            <div id="button-temperature" class="conversion-button" style="display: none;">
+                <div class="convertFrom">
+                    <label for="temperature-select" class="label">Convert from:</label>
+                    <select name="temperature-select" id="temperature-select" class="select">
+                        <option value="Celsius">Celsius</option>
+                        <option value="Fahrenheit">Fahrenheit</option>
+                        <option value="Kelvin">Kelvin</option>
+                    </select>        
+                </div>
+                <div class="convertInto">
+                    <label for="temperature-select" class="label">Convert into:</label>
+                    <select name="temperature-select" id="temperature-select-to" class="select">
+                        <option value="Celsius">Celsius</option>
+                        <option value="Fahrenheit">Fahrenheit</option>
+                        <option value="Kelvin">Kelvin</option>
+                    </select>        
+                </div>
+            </div>    
+        </div>
+        <div class="submit-button">
+            <button id="myButton" class="btn-submit">Submit</button>
+        </div>
+        <div id="resultContainer" class="result-container" style="display: none;">
+            <span class="text-result">Result:</span>
+            <span id="resultText" class="resultText"></span>
+            <span id="resultParameter" class="resultParameter"></span>
+        </div>
+    </div>
+
+
+
+    <script src="../javascript/script.js"></script>
+</body>
+</html>
