@@ -46,8 +46,8 @@ document.addEventListener("DOMContentLoaded", function () {
             fromUnit = document.getElementById("area-select").value;
             toUnit = document.getElementById("area-select-to").value;
         } else if (conversionSelect === "Temperature") {
-            fromUnit = document.getElementById("temp-select").value;
-            toUnit = document.getElementById("temp-select-to").value;
+            fromUnit = document.getElementById("temperature-select").value;
+            toUnit = document.getElementById("temperature-select-to").value;
         }
 
         if (numberInput && conversionSelect && fromUnit && toUnit) {
@@ -60,7 +60,6 @@ document.addEventListener("DOMContentLoaded", function () {
             resultText.textContent = result;
             resultParameter.textContent = toUnit;
             resultContainer.style.display = "block";
-            resultParameter
         } else {
             alert("Please fill in all fields.");
         }
